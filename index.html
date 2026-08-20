@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MVision Redesign</title>
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+    body{
+        margin:0;
+        background:#000;
+        color:#D1D5DB;
+        font-family:'Rajdhani', sans-serif;
+    }
+    html{
+        scroll-behavior:smooth;
+    } 
+/* Blinking Contact Button */
+.blink-contact {
+    color: #facc15;                 /* Yellow color */
+    font-weight: 700;
+    animation: blink 1.2s infinite; /* Blink every 1.2 seconds */
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.2;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Paste the Header + Hero code here -->
+<!-- =========================================================
+     PART 1 - MODERN HEADER + HERO SECTION
+     Inspired by Shivam Video & Empower Events
+     Simple version for BSc IT Project
+========================================================= -->
+
+<!-- Header -->
+
+<header class="fixed top-0 left-0 w-full bg-black/80 backdrop-blur-md z-50 border-b border-gray-800">
+    <div class="max-w-7xl mx-auto px-10 py-4 flex justify-between items-center">
+
+    <!-- Logo -->
+    <a href="#" class="text-4xl font-bold" style="font-family: 'Odibee Sans', sans-serif;">
+        <span class="text-red-500">M</span><span class="text-yellow-300">Vision</span>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex space-x-8 text-lg">
+        <a href="#about" class="hover:text-yellow-300 transition">About</a>
+        <a href="#services" class="hover:text-yellow-300 transition">Services</a>
+        <a href="#gallery" class="hover:text-yellow-300 transition">Gallery</a>
+       <!-- Contact (Blinking) -->
+<a href="contact us.html"
+   class="blink-contact hover:text-yellow-300 transition">
+    Contact
+</a>
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button id="nav-toggle" class="md:hidden text-3xl">
+        <i class="fas fa-bars"></i>
+    </button>
+</div>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-black border-t border-gray-800">
+    <a href="#about" class="block px-6 py-3 hover:bg-gray-900">About</a>
+    <a href="#services" class="block px-6 py-3 hover:bg-gray-900">Services</a>
+    <a href="#gallery" class="block px-6 py-3 hover:bg-gray-900">Gallery</a>
+    <a href="#contact" class="block px-6 py-3 hover:bg-gray-900">Contact</a>
+</div>
+
+</header>
+
+<!-- Hero Section -->
+
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+
+<!-- Background Image -->
+<img src="sofitel.jpeg"
+     alt="Corporate Event"
+     class="absolute inset-0 w-full h-full object-cover opacity-40">
+
+<!-- Dark Overlay -->
+<div class="absolute inset-0 bg-black/60"></div>
+
+<!-- Hero Content -->
+<div class="relative z-10 max-w-5xl text-center px-6">
+
+    <!-- Small Label -->
+    <p class="uppercase tracking-[0.3em] text-yellow-300 text-sm md:text-base mb-4">
+        Corporate Events | Conferences | Exhibitions
+    </p>
+
+    <!-- Main Heading -->
+    <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6"
+        style="font-family: 'Odibee Sans', sans-serif;">
+        <span class="text-red-500">Creating</span><br>
+        <span class="text-yellow-300">Memorable Event Experiences</span>
+    </h1>
+
+    <!-- Description -->
+    <p class="text-lg md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto">
+        We design and manage conferences, exhibitions, product launches,
+        and corporate events with professional planning and flawless execution.
+    </p>
+
+    <!-- Buttons -->
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+
+        <!-- Primary Button -->
+        <a href="#contact"
+           class="bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-full text-lg font-semibold transition">
+            Book Your Event
+        </a>
+
+        <!-- Secondary Button -->
+        <a href="#services"
+           class="border border-yellow-300 text-yellow-300 hover:bg-yellow-300 hover:text-black px-8 py-4 rounded-full text-lg font-semibold transition">
+            Explore Services
+        </a>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- =========================================================
+     PART 2 - ABOUT MVISION + EXPERIENCE + STATISTICS
+     Place this directly below the Hero Section
+========================================================= -->
+
+<section id="about" class="bg-black py-24">
+
+<div class="max-w-7xl mx-auto px-6">
+
+    <!-- Section Heading -->
+    <div class="text-center mb-16">
+        <p class="text-yellow-300 uppercase tracking-[0.3em] text-sm mb-3">
+            About MVision
+        </p>
+
+        <h2 class="text-4xl md:text-6xl font-bold text-white mb-6"
+            style="font-family: 'Odibee Sans', sans-serif;">
+            Professional Event Management
+            <span class="text-yellow-300">Since 2004</span>
+        </h2>
+
+        <p class="text-gray-400 text-lg max-w-3xl mx-auto">
+            We specialize in conferences, exhibitions, corporate meetings,
+            product launches, and large-scale event management with a focus
+            on creativity, technology, and flawless execution.
+        </p>
+    </div>
+
+    <!-- Two Column Layout -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+        <!-- Left Side Image -->
+        <div>
+            <img src="75 inch.png"
+                 alt="MVision Conference Setup"
+                 class="rounded-3xl shadow-2xl w-full">
+        </div>
+
+        <!-- Right Side Content -->
+        <div>
+
+            <h3 class="text-3xl md:text-4xl font-bold text-yellow-300 mb-6">
+                Delivering Exceptional Experiences
+            </h3>
+
+            <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                At MVision, we believe every event should create a lasting
+                impression. Our experienced team handles planning, venue
+                coordination, audio-visual setup, branding, stage design,
+                and on-site management with complete professionalism.
+            </p>
+
+            <p class="text-gray-400 text-lg leading-relaxed mb-8">
+                From intimate business meetings to large corporate conferences,
+                we ensure every detail is managed efficiently, allowing our
+                clients to focus on their guests and objectives.
+            </p>
+
+            <!-- Experience Highlight -->
+            <div class="border-l-4 border-red-500 pl-6">
+                <h4 class="text-2xl font-bold text-white mb-2">
+                    20+ Years of Industry Experience
+                </h4>
+
+                <p class="text-gray-400">
+                    Trusted by corporate organizations, educational institutions,
+                    healthcare events, exhibitions, and conference organizers
+                    across multiple industries.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Statistics Cards -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-20">
+
+        <div class="bg-gray-900 border border-gray-800 rounded-3xl p-8 text-center hover:border-yellow-300 transition">
+            <h3 class="text-5xl font-bold text-red-500 mb-2">20+</h3>
+            <p class="text-gray-300">Years Experience</p>
+        </div>
+
+        <div class="bg-gray-900 border border-gray-800 rounded-3xl p-8 text-center hover:border-yellow-300 transition">
+            <h3 class="text-5xl font-bold text-yellow-300 mb-2">5000+</h3>
+            <p class="text-gray-300">Events Managed</p>
+        </div>
+
+        <div class="bg-gray-900 border border-gray-800 rounded-3xl p-8 text-center hover:border-yellow-300 transition">
+            <h3 class="text-5xl font-bold text-red-500 mb-2">100+</h3>
+            <p class="text-gray-300">Corporate Clients</p>
+        </div>
+
+        <div class="bg-gray-900 border border-gray-800 rounded-3xl p-8 text-center hover:border-yellow-300 transition">
+            <h3 class="text-5xl font-bold text-yellow-300 mb-2">24/7</h3>
+            <p class="text-gray-300">Event Support</p>
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- =========================================================
+     PART 3 - SERVICES SECTION
+     Modern service cards with simple hover effects
+========================================================= -->
+
+<section id="services" class="bg-gray-950 py-24">
+
+<div class="max-w-7xl mx-auto px-6">
+
+    <!-- Section Heading -->
+    <div class="text-center mb-16">
+        <p class="text-yellow-300 uppercase tracking-[0.3em] text-sm mb-3">
+            Our Services
+        </p>
+
+        <h2 class="text-4xl md:text-6xl font-bold text-white mb-6"
+            style="font-family: 'Odibee Sans', sans-serif;">
+            Complete Event
+            <span class="text-red-500">Management Solutions</span>
+        </h2>
+
+        <p class="text-gray-400 text-lg max-w-3xl mx-auto">
+            From planning and production to execution and technical support,
+            MVision provides end-to-end event solutions for corporate,
+            conference, exhibition, and promotional events.
+        </p>
+    </div>
+
+    <!-- Service Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Card 1 -->
+        <div class="bg-black border border-gray-800 rounded-3xl p-8 hover:border-yellow-300 hover:-translate-y-2 transition duration-300">
+
+            <div class="w-16 h-16 rounded-full bg-red-500 flex items-center justify-center mb-6">
+                <i class="fas fa-calendar-check text-2xl text-white"></i>
+            </div>
+
+            <h3 class="text-2xl font-bold text-white mb-4">
+                Conference Management
+            </h3>
+
+            <p class="text-gray-400">
+                Professional planning and execution of conferences, seminars,
+                business meetings, and corporate gatherings.
+            </p>
+
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-black border border-gray-800 rounded-3xl p-8 hover:border-yellow-300 hover:-translate-y-2 transition duration-300">
+
+            <div class="w-16 h-16 rounded-full bg-yellow-300 flex items-center justify-center mb-6">
+                <i class="fas fa-store text-2xl text-black"></i>
+            </div>
+
+            <h3 class="text-2xl font-bold text-white mb-4">
+                Exhibition & Booth Design
+            </h3>
+
+            <p class="text-gray-400">
+                Creative exhibition stalls, branding solutions, and visitor
+                engagement experiences for trade shows and expos.
+            </p>
+
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-black border border-gray-800 rounded-3xl p-8 hover:border-yellow-300 hover:-translate-y-2 transition duration-300">
+
+            <div class="w-16 h-16 rounded-full bg-red-500 flex items-center justify-center mb-6">
+                <i class="fas fa-microphone text-2xl text-white"></i>
+            </div>
+
+            <h3 class="text-2xl font-bold text-white mb-4">
+                Audio & Visual Production
+            </h3>
+
+            <p class="text-gray-400">
+                LED screens, projectors, sound systems, lighting, and stage
+                production for flawless event presentations.
+            </p>
+
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-black border border-gray-800 rounded-3xl p-8 hover:border-yellow-300 hover:-translate-y-2 transition duration-300">
+
+            <div class="w-16 h-16 rounded-full bg-yellow-300 flex items-center justify-center mb-6">
+                <i class="fas fa-bullhorn text-2xl text-black"></i>
+            </div>
+
+            <h3 class="text-2xl font-bold text-white mb-4">
+                Product Launch Events
+            </h3>
+
+            <p class="text-gray-400">
+                Memorable launch events designed to create maximum brand
+                impact and audience engagement.
+            </p>
+
+        </div>
+
+        <!-- Card 5 -->
+        <div class="bg-black border border-gray-800 rounded-3xl p-8 hover:border-yellow-300 hover:-translate-y-2 transition duration-300">
+
+            <div class="w-16 h-16 rounded-full bg-red-500 flex items-center justify-center mb-6">
+                <i class="fas fa-building text-2xl text-white"></i>
+            </div>
+
+            <h3 class="text-2xl font-bold text-white mb-4">
+                Corporate Event Planning
+            </h3>
+
+            <p class="text-gray-400">
+                End-to-end management for annual meetings, employee events,
+                award ceremonies, and business functions.
+            </p>
+
+        </div>
+
+        <!-- Card 6 -->
+        <div class="bg-black border border-gray-800 rounded-3xl p-8 hover:border-yellow-300 hover:-translate-y-2 transition duration-300">
+
+            <div class="w-16 h-16 rounded-full bg-yellow-300 flex items-center justify-center mb-6">
+                <i class="fas fa-headset text-2xl text-black"></i>
+            </div>
+
+            <h3 class="text-2xl font-bold text-white mb-4">
+                Event Support & Coordination
+            </h3>
+
+            <p class="text-gray-400">
+                On-site coordination, vendor management, registration support,
+                and complete event supervision from start to finish.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Bottom CTA -->
+    <div class="text-center mt-16">
+
+        <a href="#contact"
+           class="inline-block bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-full text-lg font-semibold transition">
+            Discuss Your Event Requirements
+        </a>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- =========================================================
+     PART 4 - PORTFOLIO / EVENT GALLERY
+     Modern gallery inspired by corporate event websites
+========================================================= -->
+
+<section id="gallery" class="bg-black py-24">
+
+<div class="max-w-7xl mx-auto px-6">
+
+    <!-- Section Heading -->
+    <div class="text-center mb-16">
+        <p class="text-yellow-300 uppercase tracking-[0.3em] text-sm mb-3">
+            Our Portfolio
+        </p>
+
+        <h2 class="text-4xl md:text-6xl font-bold text-white mb-6"
+            style="font-family: 'Odibee Sans', sans-serif;">
+            Events We Have
+            <span class="text-yellow-300">Successfully Delivered</span>
+        </h2>
+
+        <p class="text-gray-400 text-lg max-w-3xl mx-auto">
+            A glimpse into conferences, exhibitions, product launches,
+            and corporate events managed by the MVision team.
+        </p>
+    </div>
+
+    <!-- Featured Event -->
+    <div class="mb-8 group">
+
+        <div class="relative overflow-hidden rounded-3xl">
+
+            <img src="sofitel.jpeg"
+                 alt="Featured Corporate Event"
+                 class="w-full h-[500px] object-cover group-hover:scale-105 transition duration-500">
+
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-black/40"></div>
+
+            <!-- Text -->
+            <div class="absolute bottom-8 left-8">
+
+                <p class="text-yellow-300 uppercase tracking-[0.2em] text-sm mb-2">
+                    Featured Event
+                </p>
+
+                <h3 class="text-3xl md:text-5xl font-bold text-white mb-3">
+                    Corporate Conference Production
+                </h3>
+
+                <p class="text-gray-300 text-lg max-w-2xl">
+                    Complete conference setup including stage design,
+                    LED displays, audio systems, lighting, and event coordination.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Image 1 -->
+        <div class="group">
+
+            <div class="relative overflow-hidden rounded-3xl">
+
+                <img src="75 inch.png"
+                     alt="Conference Display Setup"
+                     class="w-full h-72 object-cover group-hover:scale-110 transition duration-500">
+
+                <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition"></div>
+
+            </div>
+
+            <h4 class="text-xl font-bold text-white mt-4">
+                LED Display & Presentation Setup
+            </h4>
+
+            <p class="text-gray-400">
+                Professional display solutions for conferences and seminars.
+            </p>
+
+        </div>
+
+        <!-- Image 2 -->
+        <div class="group">
+
+            <div class="relative overflow-hidden rounded-3xl">
+
+                <img src="75 inch2.png"
+                     alt="Stage & Conference Production"
+                     class="w-full h-72 object-cover group-hover:scale-110 transition duration-500">
+
+                <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition"></div>
+
+            </div>
+
+            <h4 class="text-xl font-bold text-white mt-4">
+                Stage & Conference Production
+            </h4>
+
+            <p class="text-gray-400">
+                Complete stage management with sound, lighting, and branding.
+            </p>
+
+        </div>
+
+        <!-- Image 3 -->
+        <div class="group">
+
+            <div class="relative overflow-hidden rounded-3xl">
+
+                <img src="sofitel.jpeg"
+                     alt="Corporate Event Management"
+                     class="w-full h-72 object-cover group-hover:scale-110 transition duration-500">
+
+                <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition"></div>
+
+            </div>
+
+            <h4 class="text-xl font-bold text-white mt-4">
+                Corporate Event Management
+            </h4>
+
+            <p class="text-gray-400">
+                End-to-end planning and execution of large-scale corporate events.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Portfolio CTA -->
+    <div class="text-center mt-16">
+
+        <a href="gallery.html"
+           class="inline-block border border-yellow-300 text-yellow-300 hover:bg-yellow-300 hover:text-black px-8 py-4 rounded-full text-lg font-semibold transition">
+            View Complete Gallery
+        </a>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- =========================================================
+     PART 5 - WHY CHOOSE MVISION + CLIENTS + TESTIMONIALS
+========================================================= -->
+
+<section class="bg-gray-950 py-24">
+
+<div class="max-w-7xl mx-auto px-6">
+
+    <!-- Section Heading -->
+    <div class="text-center mb-16">
+        <p class="text-yellow-300 uppercase tracking-[0.3em] text-sm mb-3">
+            Why Choose Us
+        </p>
+
+        <h2 class="text-4xl md:text-6xl font-bold text-white mb-6"
+            style="font-family: 'Odibee Sans', sans-serif;">
+            Trusted By
+            <span class="text-red-500">Leading Organizations</span>
+        </h2>
+
+        <p class="text-gray-400 text-lg max-w-3xl mx-auto">
+            Our commitment to quality, transparency, and flawless execution
+            has helped us build long-term relationships with corporate clients,
+            educational institutions, healthcare organizations, and event partners.
+        </p>
+    </div>
+
+    <!-- Feature Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+
+        <div class="bg-black border border-gray-800 rounded-3xl p-8 text-center hover:border-yellow-300 transition">
+
+            <div class="w-16 h-16 mx-auto rounded-full bg-red-500 flex items-center justify-center mb-6">
+                <i class="fas fa-award text-2xl text-white"></i>
+            </div>
+
+            <h3 class="text-xl font-bold text-white mb-3">
+                Proven Experience
+            </h3>
+
+            <p class="text-gray-400">
+                Over two decades of successful event management across multiple industries.
+            </p>
+
+        </div>
+
+        <div class="bg-black border border-gray-800 rounded-3xl p-8 text-center hover:border-yellow-300 transition">
+
+            <div class="w-16 h-16 mx-auto rounded-full bg-yellow-300 flex items-center justify-center mb-6">
+                <i class="fas fa-users text-2xl text-black"></i>
+            </div>
+
+            <h3 class="text-xl font-bold text-white mb-3">
+                Expert Team
+            </h3>
+
+            <p class="text-gray-400">
+                Skilled professionals handling planning, production, and execution.
+            </p>
+
+        </div>
+
+        <div class="bg-black border border-gray-800 rounded-3xl p-8 text-center hover:border-yellow-300 transition">
+
+            <div class="w-16 h-16 mx-auto rounded-full bg-red-500 flex items-center justify-center mb-6">
+                <i class="fas fa-clock text-2xl text-white"></i>
+            </div>
+
+            <h3 class="text-xl font-bold text-white mb-3">
+                On-Time Delivery
+            </h3>
+
+            <p class="text-gray-400">
+                Every event is delivered with precise coordination and timely execution.
+            </p>
+
+        </div>
+
+        <div class="bg-black border border-gray-800 rounded-3xl p-8 text-center hover:border-yellow-300 transition">
+
+            <div class="w-16 h-16 mx-auto rounded-full bg-yellow-300 flex items-center justify-center mb-6">
+                <i class="fas fa-handshake text-2xl text-black"></i>
+            </div>
+
+            <h3 class="text-xl font-bold text-white mb-3">
+                Transparent Process
+            </h3>
+
+            <p class="text-gray-400">
+                Honest communication, reliable vendors, and complete project transparency.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Trusted Clients -->
+    <div class="mb-20">
+
+        <h3 class="text-3xl md:text-4xl font-bold text-center text-white mb-10"
+            style="font-family: 'Odibee Sans', sans-serif;">
+            Trusted By Corporate & Institutional Clients
+        </h3>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+            <div class="bg-black border border-gray-800 rounded-3xl p-8 text-center">
+                <h4 class="text-xl font-bold text-yellow-300">Healthcare</h4>
+                <p class="text-gray-400 text-sm mt-2">Medical Conferences</p>
+            </div>
+
+            <div class="bg-black border border-gray-800 rounded-3xl p-8 text-center">
+                <h4 class="text-xl font-bold text-yellow-300">Corporate</h4>
+                <p class="text-gray-400 text-sm mt-2">Business Events</p>
+            </div>
+
+            <div class="bg-black border border-gray-800 rounded-3xl p-8 text-center">
+                <h4 class="text-xl font-bold text-yellow-300">Education</h4>
+                <p class="text-gray-400 text-sm mt-2">Seminars & Workshops</p>
+            </div>
+
+            <div class="bg-black border border-gray-800 rounded-3xl p-8 text-center">
+                <h4 class="text-xl font-bold text-yellow-300">Exhibitions</h4>
+                <p class="text-gray-400 text-sm mt-2">Trade Shows & Expos</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Testimonials -->
+    <div>
+
+        <h3 class="text-3xl md:text-4xl font-bold text-center text-white mb-10"
+            style="font-family: 'Odibee Sans', sans-serif;">
+            What Our Clients Say
+        </h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- Testimonial 1 -->
+            <div class="bg-black border border-gray-800 rounded-3xl p-8">
+
+                <div class="text-yellow-300 text-2xl mb-4">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+
+                <p class="text-gray-300 mb-6">
+                    "MVision managed our corporate conference with excellent
+                    planning and flawless execution. The team was professional
+                    and highly responsive throughout the event."
+                </p>
+
+                <h4 class="font-bold text-white">Corporate Client</h4>
+                <p class="text-gray-500 text-sm">Conference Organizer</p>
+
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="bg-black border border-gray-800 rounded-3xl p-8">
+
+                <div class="text-yellow-300 text-2xl mb-4">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+
+                <p class="text-gray-300 mb-6">
+                    "Their audio-visual setup, stage production, and event
+                    coordination exceeded our expectations. We would definitely
+                    work with them again."
+                </p>
+
+                <h4 class="font-bold text-white">Event Partner</h4>
+                <p class="text-gray-500 text-sm">Production Coordinator</p>
+
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="bg-black border border-gray-800 rounded-3xl p-8">
+
+                <div class="text-yellow-300 text-2xl mb-4">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+
+                <p class="text-gray-300 mb-6">
+                    "From planning to execution, MVision handled every detail
+                    efficiently. Their experience and professionalism made our
+                    event a complete success."
+                </p>
+
+                <h4 class="font-bold text-white">Institutional Client</h4>
+                <p class="text-gray-500 text-sm">Seminar Coordinator</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- =========================================================
+     PART 6 - CONTACT CTA + FOOTER
+========================================================= -->
+
+<section id="contact" class="bg-black py-24">
+
+```
+<div class="max-w-7xl mx-auto px-6">
+
+    <!-- Call To Action -->
+    <div class="bg-gradient-to-r from-red-600 to-red-500 rounded-3xl p-12 md:p-16 text-center mb-20">
+
+        <p class="text-yellow-300 uppercase tracking-[0.3em] text-sm mb-4">
+            Let's Work Together
+        </p>
+
+        <h2 class="text-4xl md:text-6xl font-bold text-white mb-6"
+            style="font-family: 'Odibee Sans', sans-serif;">
+            Ready To Create
+            <span class="text-yellow-300">Your Next Event?</span>
+        </h2>
+
+        <p class="text-white/90 text-lg max-w-3xl mx-auto mb-10">
+            Whether it's a conference, exhibition, corporate meeting,
+            product launch, or large-scale event, our team is ready to help
+            you plan and execute it professionally.
+        </p>
+
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+
+            <a href="contact us.html"
+               class="bg-yellow-300 hover:bg-yellow-400 text-black px-8 py-4 rounded-full text-lg font-semibold transition">
+                Contact MVision
+            </a>
+
+            <a href="services.html"
+               class="border border-white text-white hover:bg-white hover:text-black px-8 py-4 rounded-full text-lg font-semibold transition">
+                Explore Services
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- Contact Information -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+
+        <!-- Email -->
+        <div class="bg-gray-950 border border-gray-800 rounded-3xl p-8 text-center">
+
+            <div class="w-16 h-16 mx-auto rounded-full bg-red-500 flex items-center justify-center mb-6">
+                <i class="fas fa-envelope text-2xl text-white"></i>
+            </div>
+
+            <h3 class="text-2xl font-bold text-white mb-3">
+                Email Us
+            </h3>
+
+            <p class="text-gray-400 mb-3">
+                For bookings and event inquiries
+            </p>
+
+            <a href="mailto:m.vision202@gmail.com"
+               class="text-yellow-300 hover:text-yellow-400 transition">
+                m.vision202@gmail.com
+            </a>
+
+        </div>
+
+        <!-- WhatsApp -->
+        <div class="bg-gray-950 border border-gray-800 rounded-3xl p-8 text-center">
+
+            <div class="w-16 h-16 mx-auto rounded-full bg-yellow-300 flex items-center justify-center mb-6">
+                <i class="fab fa-whatsapp text-2xl text-black"></i>
+            </div>
+
+            <h3 class="text-2xl font-bold text-white mb-3">
+                WhatsApp
+            </h3>
+
+            <p class="text-gray-400 mb-3">
+                Quick support and communication
+            </p>
+
+            <a href="https://wa.me/9819854202"
+               target="_blank"
+               class="text-yellow-300 hover:text-yellow-400 transition">
+                +91 98198 54202
+            </a>
+
+        </div>
+
+        <!-- Location -->
+        <div class="bg-gray-950 border border-gray-800 rounded-3xl p-8 text-center">
+
+            <div class="w-16 h-16 mx-auto rounded-full bg-red-500 flex items-center justify-center mb-6">
+                <i class="fas fa-map-marker-alt text-2xl text-white"></i>
+            </div>
+
+            <h3 class="text-2xl font-bold text-white mb-3">
+                Visit Us
+            </h3>
+
+            <p class="text-gray-400 mb-3">
+                Based in Mumbai, Maharashtra
+            </p>
+
+            <a href="https://share.google/M5kgw5tFl18AtdDKm"
+               target="_blank"
+               class="text-yellow-300 hover:text-yellow-400 transition">
+                View Location
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="bg-gray-950 border-t border-gray-800 py-12">
+
+<div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
+
+        <!-- Brand -->
+        <div class="md:col-span-2">
+
+            <h2 class="text-4xl font-bold mb-4"
+                style="font-family: 'Odibee Sans', sans-serif;">
+                <span class="text-red-500">M</span><span class="text-yellow-300">Vision</span>
+            </h2>
+
+            <p class="text-gray-400 leading-relaxed max-w-md">
+                Professional event and conference management solutions
+                specializing in corporate events, exhibitions, seminars,
+                product launches, and technical event production.
+            </p>
+
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+
+            <h3 class="text-xl font-bold text-white mb-4">
+                Quick Links
+            </h3>
+
+            <ul class="space-y-2 text-gray-400">
+
+                <li><a href="#about" class="hover:text-yellow-300 transition">About</a></li>
+                <li><a href="#services" class="hover:text-yellow-300 transition">Services</a></li>
+                <li><a href="#gallery" class="hover:text-yellow-300 transition">Gallery</a></li>
+                <li><a href="#contact" class="hover:text-yellow-300 transition">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- Services -->
+        <div>
+
+            <h3 class="text-xl font-bold text-white mb-4">
+                Services
+            </h3>
+
+            <ul class="space-y-2 text-gray-400">
+
+                <li>Conference Management</li>
+                <li>Exhibition Design</li>
+                <li>Audio-Visual Production</li>
+                <li>Corporate Events</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- Bottom Footer -->
+    <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
+
+        <p class="text-gray-500 text-center md:text-left">
+            © 2026 MVision. All Rights Reserved.
+        </p>
+
+        <!-- Social Icons -->
+        <div class="flex gap-6 text-2xl">
+
+            <a href="https://www.instagram.com/mvision_events?igsh=MTZyZ3RjcmRzdHRkaA=="
+               target="_blank"
+               class="text-gray-400 hover:text-yellow-300 transition">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://wa.me/9819854202"
+               target="_blank"
+               class="text-gray-400 hover:text-yellow-300 transition">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+
+            <a href="https://share.google/M5kgw5tFl18AtdDKm"
+               target="_blank"
+               class="text-gray-400 hover:text-yellow-300 transition">
+                <i class="fas fa-map-marker-alt"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</footer>
+
+
+<!-- Small JavaScript for Mobile Menu -->
+
+<script>
+const toggle = document.getElementById('nav-toggle');
+const menu = document.getElementById('mobile-menu');
+
+toggle.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+});
+</script>
+
+
+</body>
+</html>
